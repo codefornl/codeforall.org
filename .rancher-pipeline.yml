@@ -12,5 +12,5 @@ stages:
 timeout: 45
 branch:
   include:
-  - master
+  - gh-pages
 notification: {}
