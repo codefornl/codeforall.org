@@ -1,6 +1,5 @@
 # build environment
-FROM jekyll/builder:3.8 as build
-ENV extra_params --o:net.proto=IPv4
+FROM starefossen/github-pages:onbuild as build
 COPY . /builder
 WORKDIR /builder
 RUN jekyll build
